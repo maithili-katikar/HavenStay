@@ -61,6 +61,10 @@ async function main(){
 //     res.send("Root route working successfully");
 // });
 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 const store=MongoStore.create({
     mongoUrl:dbUrl,
     crypto:{

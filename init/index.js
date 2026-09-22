@@ -9,7 +9,7 @@ main().then((req)=>{
 });
 
 async function main(){
-    await mongoose.connect("mongodb://127.0.0.1:27017/Wanderlust");
+    await mongoose.connect("mongodb://127.0.0.1:27017/HavenStay");
 };
 
 const initDB=async()=>{

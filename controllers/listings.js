@@ -13,7 +13,7 @@ module.exports.createListing = async (req, res, next) => {
 
         const accurateLocation = `${listing.location}, ${listing.country}`;
         const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(accurateLocation)}&format=json&limit=1`, {
-            headers: { 'User-Agent': 'Wanderlust-Student-Project' }
+            headers: { 'User-Agent': 'HavenStay-Student-Project' }
         });
         const geoData = await response.json();
 
